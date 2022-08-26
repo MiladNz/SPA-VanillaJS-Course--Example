@@ -1,0 +1,61 @@
+@import url("./assets/styles/fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "iranyekan";
+  list-style: none;
+}
+
+/*  VARIABLES : */
+:root {
+  --primaryColor: #6d28d9;
+  --secondaryColor: #ede9fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
+  --nav-width: 250px;
+}
+
+body {
+  font-family: "iranyekan";
+  color: var(--mainBlack);
+  background-color: var(--bodyColor);
+  direction: rtl;
+}
+
+.main-layout {
+  display: flex;
+}
+.nav {
+  height: 100vh;
+  width: var(--nav-width);
+  background-color: #fff;
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+.nav li {
+  margin: 5px 0;
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--mainGrey);
+  display: block;
+  padding: 12px 8px;
+  transition: all 0.5s ease-out;
+}
+.nav__link:hover {
+  background-color: #eef2f8;
+  color: #2c4982;
+  border-radius: 1.5rem;
+}
+#app {
+  height: 200vh;
+}
