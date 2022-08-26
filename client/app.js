@@ -1,6 +1,6 @@
-import Dashboard from "./pages/Dashboard.js";
-import Posts from "./pages/Posts.js";
-import Products from "./pages/Products.js";
+import Dashboard from "./client/pages/Dashboard.js";
+import Posts from "./client/pages/Posts.js";
+import Products from "./client/pages/Products.js";
 
 //1. what view show to user based on Route ?
 function router(params) {
