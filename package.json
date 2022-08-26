@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MiladNz/SPA-VanillaJS-Course-Example/issues"
   },
-  "homepage": "https://github.com/MiladNz/SPA-VanillaJS-Course-Example#readme"
+  "homepage": "https://github.com/MiladNz/SPA-VanillaJS-Course-Example#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
