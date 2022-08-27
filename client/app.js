@@ -1,6 +1,7 @@
-import Dashboard from "./client/pages/Dashboard.js";
-import Posts from "./client/pages/Posts.js";
-import Products from "./client/pages/Products.js";
+import Dashboard from "./pages/Dashboard.js";
+import Posts from "./pages/Posts.js";
+import Products from "./pages/Products.js";
+import NotFound from "./pages/NotFound.js";
 
 //1. what view show to user based on Route ?
 function router(params) {
@@ -19,7 +20,10 @@ function router(params) {
 
   if (!match) {
     match = {
-      route: { path: "/not-found", view: () => console.log("not found page") },
+      route: {
+        path: "/not-found",
+        view: NotFound,
+      },
       isMatch: true,
     };
   }
