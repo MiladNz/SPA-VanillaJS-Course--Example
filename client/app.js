@@ -39,6 +39,19 @@ function navigateTo(url) {
 
 window.addEventListener("popstate", router);
 
+// SIDEBAR TOGGLER :
+const sidebarToggler = document.querySelector(".sidebar-toggler");
+const sidebar = document.querySelector(".nav");
+const root = document.documentElement;
+sidebarToggler.addEventListener("click", () => {
+  sidebar.classList.toggle("mini-sidebar");
+  if (sidebar.classList.contains("mini-sidebar")) {
+    root.style.setProperty("--nav-width", 70 + "px");
+  } else {
+    root.style.setProperty("--nav-width", 250 + "px");
+  }
+});
+///
 document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", (e) => {
     // if (e.target.hasAttribute("data-link")) {         or
